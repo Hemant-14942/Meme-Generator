@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <script src="memeslist.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Meme Generator</h1>
+    </header>
+    
+    <main>
+        <section class="sec1">
+            <div class="meme-gen">
+                <h2>Random Meme Generator</h2>
+                <button class="generate-btn">Generate Meme</button>
+                <div class="meme-content">
+                    <h3 class="meme-title">Loading...</h3>
+                    <div class="meme-img-container">
+                        <img src="" alt="Random meme" />
+                    </div>
+                    <div class="meme-author"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <div class="meme-generator">
+                <h2>Custom Meme Creator</h2>
+                <div class="input-group">
+                    <label for="imageFileInput">Select an Image</label>
+                    <input type="file" id="imageFileInput" accept="image/*">
+                </div>
+
+                <div class="input-group">
+                    <label for="topTextInput">Top Text</label>
+                    <input class="text-input" type="text" id="topTextInput" placeholder="Enter top text">
+                </div>
+
+                <div class="input-group">
+                    <label for="bottomTextInput">Bottom Text</label>
+                    <input class="text-input" type="text" id="bottomTextInput" placeholder="Enter bottom text">
+                </div>
+
+                <div class="canvas-container">
+                    <canvas id="meme"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with ❤️ | Your Meme Generator</p>
+    </footer>
+</body>
+</html>
